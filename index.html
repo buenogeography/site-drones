@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drones: Saiba como operá-lo corretamente</title>
+  <title>Drone Legal: operação segura de drones no Brasil</title>
 
   <link rel="stylesheet" href="style.css" />
 
@@ -14,31 +14,35 @@
 
 <body>
 
+  <!-- CABEÇALHO -->
   <header class="header">
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Menu principal">
       <div class="logo-area">
         <span class="logo-icon">✈</span>
         <span class="logo-text">Drone Legal</span>
       </div>
 
       <ul class="nav-links">
-        <li><a href="#inicio">Início</a></li>
+        <li><a href="#inicio" class="active">Início</a></li>
         <li><a href="#orgaos">Órgãos</a></li>
         <li><a href="#classes">Classes</a></li>
         <li><a href="#voos">Tipos de voo</a></li>
         <li><a href="#normas">Normas</a></li>
+        <li><a href="#ica10040">ICA 100-40</a></li>
         <li><a href="#academico">Uso acadêmico</a></li>
+        <li><a href="#referencias">Referências</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
+    <!-- SEÇÃO INICIAL -->
     <section id="inicio" class="hero">
       <div class="hero-content">
         <p class="tag">Guia introdutório sobre operação segura de drones no Brasil</p>
 
-        <h1>Drones: saiba como operá-lo corretamente</h1>
+        <h1>Drones: saiba como operá-los corretamente</h1>
 
         <p class="hero-text">
           O uso de Aeronaves Remotamente Pilotadas, popularmente conhecidas como drones,
@@ -49,13 +53,13 @@
 
         <div class="hero-buttons">
           <a href="#normas" class="btn-primary">Ver normas brasileiras</a>
-          <a href="https://www.youtube.com/watch?v=Ezyuw2PBfm0" target="_blank" class="btn-secondary">
+          <a href="https://www.youtube.com/watch?v=Ezyuw2PBfm0" target="_blank" rel="noopener noreferrer" class="btn-secondary">
             Assistir vídeo
           </a>
         </div>
       </div>
 
-      <div class="hero-card">
+      <aside class="hero-card" aria-label="Checklist antes de voar">
         <h2>Antes de voar</h2>
         <ul>
           <li>Verifique se o drone precisa de cadastro.</li>
@@ -64,17 +68,18 @@
           <li>Utilize equipamentos homologados pela ANATEL.</li>
           <li>Respeite pessoas, propriedades e áreas restritas.</li>
         </ul>
-      </div>
+      </aside>
     </section>
 
+    <!-- ÓRGÃOS REGULADORES -->
     <section id="orgaos" class="section">
       <div class="section-title">
         <p class="tag">Instituições reguladoras</p>
         <h2>Órgãos envolvidos na operação de drones</h2>
         <p>
           A operação segura de drones no Brasil envolve diferentes instituições.
-          Cada uma possui uma função específica no controle, cadastro, homologação
-          e autorização de uso.
+          Cada uma possui uma função específica no cadastro, homologação,
+          autorização de voo e controle do espaço aéreo.
         </p>
       </div>
 
@@ -88,7 +93,7 @@
             à aviação civil, incluindo cadastro, classificação e requisitos para
             operação de aeronaves não tripuladas.
           </p>
-          <a href="https://www.gov.br/anac/pt-br/sistemas/sisant" target="_blank" class="card-link">
+          <a href="https://www.gov.br/anac/pt-br/sistemas/sisant" target="_blank" rel="noopener noreferrer" class="card-link">
             Acessar portal SISANT
           </a>
         </article>
@@ -101,7 +106,7 @@
             e autorizar o acesso ao espaço aéreo brasileiro por aeronaves remotamente
             pilotadas.
           </p>
-          <a href="https://sarpas.decea.mil.br/" target="_blank" class="card-link">
+          <a href="https://sarpas.decea.mil.br/" target="_blank" rel="noopener noreferrer" class="card-link">
             Acessar portal SARPAS
           </a>
         </article>
@@ -114,7 +119,7 @@
             que utilizam radiofrequência, como controles, transmissores e sistemas
             de comunicação dos drones.
           </p>
-          <a href="https://www.gov.br/anatel/pt-br" target="_blank" class="card-link">
+          <a href="https://www.gov.br/anatel/pt-br" target="_blank" rel="noopener noreferrer" class="card-link">
             Acessar portal da ANATEL
           </a>
         </article>
@@ -122,117 +127,187 @@
       </div>
     </section>
 
-    <section id="classes" class="section alt-section">
-      <div class="section-title">
-        <p class="tag">Classificação operacional</p>
-        <h2>Classes de drones segundo o peso máximo de decolagem</h2>
-        <p>
-          No Brasil, a ANAC utiliza o peso máximo de decolagem como um dos critérios
-          para classificar as aeronaves remotamente pilotadas.
-        </p>
-      </div>
+    <!-- CLASSES DE DRONES -->
+<section id="classes" class="section alt-section">
 
-      <div class="class-grid">
+  <div class="section-title">
+    <p class="tag">Classificação operacional</p>
 
-        <article class="class-card">
-          <span>Classe 1</span>
-          <h3>Acima de 150 kg</h3>
-          <p>
-            Aeronaves remotamente pilotadas de maior porte, sujeitas a exigências
-            regulatórias mais rigorosas, considerando o risco operacional envolvido.
-          </p>
-        </article>
+    <h2>Classes de drones segundo o peso máximo de decolagem</h2>
 
-        <article class="class-card">
-          <span>Classe 2</span>
-          <h3>Acima de 25 kg até 150 kg</h3>
-          <p>
-            Equipamentos de porte intermediário, geralmente associados a operações
-            mais complexas, exigindo atenção maior aos requisitos legais e operacionais.
-          </p>
-        </article>
+    <p>
+      No Brasil, a ANAC utiliza o peso máximo de decolagem como um dos critérios
+      para classificar as aeronaves remotamente pilotadas.
+    </p>
+  </div>
 
-        <article class="class-card">
-          <span>Classe 3</span>
-          <h3>Até 25 kg</h3>
-          <p>
-            Categoria na qual se enquadra a maior parte dos drones utilizados para
-            fins recreativos, educacionais, ambientais, cartográficos e profissionais.
-          </p>
-        </article>
+  <div class="class-grid">
+
+    <!-- CLASSE 1 -->
+    <article class="class-card">
+
+      <img src="imagens_/Classe_1.jpeg"
+           alt="Drone Classe 1"
+           class="class-image">
+
+      <span>Classe 1</span>
+
+      <h3>Acima de 150 kg</h3>
+
+      <p>
+        Aeronaves remotamente pilotadas de maior porte, sujeitas a exigências
+        regulatórias mais rigorosas em razão do risco operacional envolvido.
+      </p>
+
+    </article>
+
+    <!-- CLASSE 2 -->
+    <article class="class-card">
+
+      <img src="imagens_/Classe_2.jpeg"
+           alt="Drone Classe 2"
+           class="class-image">
+
+      <span>Classe 2</span>
+
+      <h3>Acima de 25 kg até 150 kg</h3>
+
+      <p>
+        Equipamentos de porte intermediário, geralmente associados a operações
+        mais complexas e a requisitos legais e operacionais específicos.
+      </p>
+
+    </article>
+
+    <!-- CLASSE 3 -->
+    <article class="class-card">
+
+      <img src="imagens_/Classe_3.jpeg"
+           alt="Drone Classe 3"
+           class="class-image">
+
+      <span>Classe 3</span>
+
+      <h3>Até 25 kg</h3>
+
+      <p>
+        Categoria em que se enquadra a maior parte dos drones utilizados para
+        fins recreativos, educacionais, ambientais, cartográficos e profissionais.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
 
       </div>
     </section>
 
+    <!-- VÍDEO -->
     <section id="video" class="section">
       <div class="section-title">
         <p class="tag">Vídeo explicativo</p>
         <h2>Como operar drones corretamente</h2>
         <p>
-          Assista ao vídeo introdutório com orientações sobre o uso correto de drones.
+          Assista ao vídeo introdutório com orientações gerais sobre o uso correto de drones.
         </p>
       </div>
 
       <div class="video-container">
         <iframe
-  src="https://www.youtube.com/embed/Ezyuw2PBfm0"
-  title="Vídeo sobre operação de drones"
-        allowfullscreen>
-       </iframe>
+          src="https://www.youtube.com/embed/Ezyuw2PBfm0"
+          title="Vídeo sobre operação de drones"
+          allowfullscreen>
+        </iframe>
       </div>
     </section>
 
-    <section id="voos" class="section alt-section">
-      <div class="section-title">
-        <p class="tag">Modalidades de operação</p>
-        <h2>Tipos de voo realizados com drones</h2>
-        <p>
-          As operações com drones podem variar conforme a finalidade, a distância
-          do piloto, a visibilidade da aeronave e o ambiente de voo.
-        </p>
-      </div>
+ <!-- TIPOS DE VOO -->
+<section id="voos" class="section alt-section">
 
-      <div class="flight-grid">
+  <div class="section-title">
+    <p class="tag">Modalidades de operação</p>
 
-        <article class="flight-card">
-          <div class="flight-icon">👁️</div>
-          <h3>VLOS</h3>
-          <p>
-            Operação em linha de visada visual. O piloto mantém contato visual direto
-            com o drone durante todo o voo.
-          </p>
-        </article>
+    <h2>Tipos de voo realizados com drones</h2>
 
-        <article class="flight-card">
-          <div class="flight-icon">📡</div>
-          <h3>BVLOS</h3>
-          <p>
-            Operação além da linha de visada visual. Exige requisitos específicos e
-            maior controle operacional.
-          </p>
-        </article>
+    <p>
+      As operações com drones podem variar conforme a finalidade, a distância
+      do piloto, a visibilidade da aeronave e o ambiente de voo.
+    </p>
+  </div>
 
-        <article class="flight-card">
-          <div class="flight-icon">🧭</div>
-          <h3>EVLOS</h3>
-          <p>
-            Operação em linha de visada visual estendida, com apoio de observadores
-            para manter a segurança do voo.
-          </p>
-        </article>
+  <div class="flight-grid">
 
-        <article class="flight-card">
-          <div class="flight-icon">🗺️</div>
-          <h3>Voo autônomo planejado</h3>
-          <p>
-            Realizado com plano de voo previamente configurado, muito usado em
-            mapeamento, fotogrametria e monitoramento ambiental.
-          </p>
-        </article>
+    <!-- VLOS -->
+    <article class="flight-card">
 
-      </div>
-    </section>
+      <img src="imagens_/VLOS.jpeg"
+           alt="Operação VLOS"
+           class="flight-image">
 
+      <h3>VLOS</h3>
+
+      <p>
+        Operação em linha de visada visual. O piloto mantém contato visual direto
+        com o drone durante todo o voo.
+      </p>
+
+    </article>
+
+    <!-- BVLOS -->
+    <article class="flight-card">
+
+      <img src="imagens_/BVLOS.jpeg"
+           alt="Operação BVLOS"
+           class="flight-image">
+
+      <h3>BVLOS</h3>
+
+      <p>
+        Operação além da linha de visada visual. Exige requisitos específicos,
+        maior controle operacional e análise criteriosa de segurança.
+      </p>
+
+    </article>
+
+    <!-- EVLOS -->
+    <article class="flight-card">
+
+      <img src="imagens_/EVLOS.jpeg"
+           alt="Operação EVLOS"
+           class="flight-image">
+
+      <h3>EVLOS</h3>
+
+      <p>
+        Operação em linha de visada visual estendida, com apoio de observadores
+        para manter a segurança do voo.
+      </p>
+
+    </article>
+
+    <!-- AUTÔNOMO -->
+    <article class="flight-card">
+
+      <img src="imagens_/autonomo.png"
+           alt="Voo autônomo planejado"
+           class="flight-image">
+
+      <h3>Voo autônomo planejado</h3>
+
+      <p>
+        Realizado com plano de voo previamente configurado, muito utilizado em
+        mapeamento, fotogrametria e monitoramento ambiental.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+    <!-- NORMAS BRASILEIRAS -->
     <section id="normas" class="section">
       <div class="section-title">
         <p class="tag">Regulamentação brasileira</p>
@@ -253,8 +328,8 @@
             <h3>ANAC — Aviação civil</h3>
             <p>
               A ANAC regulamenta o cadastro de aeronaves, as classes de drones,
-              requisitos para pilotos remotos, operação recreativa e operação
-              profissional. O sistema SISANT é utilizado para cadastro de drones
+              os requisitos para pilotos remotos e as condições de operação recreativa
+              e profissional. O sistema SISANT é utilizado para cadastro de drones
               conforme os critérios definidos pela agência.
             </p>
           </div>
@@ -267,9 +342,9 @@
           <div>
             <h3>DECEA — Acesso ao espaço aéreo</h3>
             <p>
-              O DECEA estabelece procedimentos para solicitação de acesso ao espaço
-              aéreo, incluindo regras de altitude, distanciamento de aeródromos,
-              áreas restritas, zonas urbanas e operações próximas a pessoas.
+              O DECEA estabelece procedimentos para solicitação de acesso ao espaço aéreo,
+              incluindo regras de altitude, distanciamento de aeródromos, áreas restritas,
+              zonas urbanas e operações próximas a pessoas.
             </p>
           </div>
         </article>
@@ -305,7 +380,67 @@
       </div>
     </section>
 
-    <section id="academico" class="section alt-section">
+    <!-- ICA 100-40 -->
+    <section id="ica10040" class="section alt-section">
+      <div class="section-title">
+        <p class="tag">Legislação aeronáutica</p>
+        <h2>ICA 100-40 — Aeronaves Não Tripuladas e o Acesso ao Espaço Aéreo Brasileiro</h2>
+        <p>
+          A ICA 100-40 é uma instrução do DECEA que estabelece procedimentos para
+          o acesso ao espaço aéreo brasileiro por aeronaves não tripuladas.
+          O documento é essencial para operadores recreativos, profissionais,
+          científicos e institucionais.
+        </p>
+      </div>
+
+      <div class="academic-box">
+        <h3>O que observar na ICA 100-40?</h3>
+
+        <div class="academic-grid">
+          <div>
+            <h4>Solicitação de voo</h4>
+            <p>
+              Orienta os procedimentos para solicitação de acesso ao espaço aéreo,
+              especialmente por meio dos sistemas oficiais do DECEA.
+            </p>
+          </div>
+
+          <div>
+            <h4>Segurança operacional</h4>
+            <p>
+              Define cuidados relacionados a pessoas, edificações, aeródromos,
+              áreas restritas e demais elementos sensíveis do espaço aéreo.
+            </p>
+          </div>
+
+          <div>
+            <h4>Tipos de operação</h4>
+            <p>
+              Apresenta critérios aplicáveis a operações em linha de visada visual,
+              além da linha de visada e situações com observadores.
+            </p>
+          </div>
+
+          <div>
+            <h4>Responsabilidade do operador</h4>
+            <p>
+              Reforça que o operador deve conhecer as regras, planejar o voo,
+              avaliar riscos e respeitar as restrições do espaço aéreo.
+            </p>
+          </div>
+        </div>
+
+        <a href="https://publicacoes.decea.mil.br/version/1542"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-primary small-btn">
+          Acessar ICA 100-40 no portal do DECEA
+        </a>
+      </div>
+    </section>
+
+    <!-- USO ACADÊMICO -->
+    <section id="academico" class="section">
       <div class="section-title">
         <p class="tag">Pesquisa científica</p>
         <h2>Uso acadêmico de drones</h2>
@@ -355,19 +490,21 @@
 
         <a href="https://www.researchgate.net/publication/399634307_Panorama_da_Producao_Cientifica_sobre_Drones_no_BrasilOverview_of_Scientific_Production_on_Drones_in_BrazilPanorama_de_la_Produccion_Cientifica_sobre_Drones_en_Brasil"
            target="_blank"
+           rel="noopener noreferrer"
            class="btn-primary small-btn">
           Panorama da Produção Científica sobre Drones no Brasil
         </a>
       </div>
     </section>
 
-    <section id="referencias" class="section">
+    <!-- REFERÊNCIAS -->
+    <section id="referencias" class="section alt-section">
       <div class="section-title">
         <p class="tag">Referências sugeridas</p>
-        <h2>Artigos e temas para aprofundamento</h2>
+        <h2>Fontes oficiais e temas para aprofundamento</h2>
         <p>
-          Para ampliar a base acadêmica do site, recomenda-se buscar artigos científicos
-          com os seguintes termos:
+          Para ampliar a base técnica e acadêmica do site, recomenda-se consultar
+          fontes oficiais e bases científicas confiáveis.
         </p>
       </div>
 
@@ -377,6 +514,8 @@
         <span>RPA</span>
         <span>UAV</span>
         <span>VANT</span>
+        <span>ICA 100-40</span>
+        <span>SARPAS NG</span>
         <span>sensoriamento remoto por drones</span>
         <span>fotogrametria com drones</span>
         <span>monitoramento ambiental</span>
@@ -384,28 +523,27 @@
         <span>mapeamento com ARP</span>
       </div>
 
-      <div class="reference-card">
-        <h3>Observação importante</h3>
-        <p>
-          Para inserir referências reais no site, recomenda-se realizar buscas em bases
-          como Portal de Periódicos CAPES, Google Scholar, Scopus, Web of Science,
-          SciELO e ResearchGate, priorizando artigos revisados por pares, com DOI,
-          ano de publicação, autores e periódico claramente identificados.
-        </p>
-      </div>
-    </section>
+    
 
-  </main>
+  <!-- RODAPÉ -->
+<footer class="footer">
 
-  <footer class="footer">
+  <p>
+    Site educativo desenvolvido para orientação inicial sobre operação segura de drones no Brasil.
+  </p>
+
+  <p>
+    Consulte sempre os portais oficiais da ANAC, DECEA e ANATEL antes de realizar operações.
+  </p>
+
+  <div class="footer-author">
     <p>
-      Site educativo desenvolvido para orientação inicial sobre operação segura de drones no Brasil.
+      Desenvolvido por <strong>Ricardo Henrique Bueno</strong>
     </p>
-    <p>
-      Consulte sempre os portais oficiais da ANAC, DECEA e ANATEL antes de realizar operações.
-    </p>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <p>
+      Doutorando em Geografia pela Universidade Estadual de Maringá - Professor Colaborador no Curso de Geografia na Universidade Estadual do Paraná - Unespar Campus de Campo Mourão 
+    </p>
+  </div>
+
+</footer>
